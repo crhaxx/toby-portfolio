@@ -1,0 +1,130 @@
+* {
+  background-color: black;
+}
+
+/*--- NAVBAR ---*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background: rgba(70, 70, 70, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(70, 70, 70, 0.22);
+  margin: 0 10px;
+}
+
+#navbar #left-side {
+  background-color: transparent;
+}
+
+#navbar #left-side a {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+#navbar #left-side h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 27px;
+}
+
+#navbar #left-side img {
+  width: 75px;
+  margin-right: 17px;
+  border-radius: 10px;
+  font-size: x-large;
+  background-color: transparent;
+}
+
+#navbar #right-side {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+}
+
+#navbar ul {
+  display: flex;
+  background-color: transparent;
+}
+
+#navbar li {
+  margin-right: 30px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+#navbar li {
+  list-style-type: none;
+}
+
+#navbar a:hover {
+  color: coral;
+}
+
+/*--- HOME ---*/
+#home {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: #ffffff;
+  padding: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#home #left {
+  flex: 2;
+  margin-right: 40px;
+}
+
+#home #right {
+  flex: 1;
+  align-self: center;
+}
+#home img {
+  min-width: 700px;
+  max-width: 900px;
+  min-height: 200px;
+  max-height: 300px;
+  padding-top: 5px;
+  border-radius: 10px;
+}
+
+/*--- FOOTER ---*/
+footer {
+  background-color: rgba(70, 70, 70, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(70, 70, 70, 0.22);
+  margin: 0 10px;
+  padding: 20px;
+}
+
+footer {
+  background-color: rgba(70, 70, 70, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(70, 70, 70, 0.22);
+  margin: 0 10px;
+  padding: 10px;
+  justify-items: center;
+}
+
+footer p {
+  color: #ffffff;
+  background-color: transparent;
+}
