@@ -1,8 +1,13 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: url(/img/back.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(/img/background.jpg), url(/img/background2.jpg);
+  background-repeat: no-repeat, repeat-y;
+  background-size: contain;
   margin: 0;
+  backdrop-filter: blur(10px); /*5px*/
 }
 /*--- NAVBAR ---*/
 #navbar {
@@ -10,11 +15,11 @@ body {
   justify-content: space-between;
   padding: 5px 20px;
   border-radius: 10px;
-  background: rgba(70, 70, 70, 0.14);
+
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(30px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   border: 1px solid rgba(70, 70, 70, 0.22);
   margin: 10px;
 }
@@ -33,8 +38,7 @@ body {
   color: #ffffff;
   font-weight: 700;
   font-size: 27px;
-
-  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-style: normal;
   word-spacing: normal;
 }
@@ -75,9 +79,15 @@ body {
 
 #navbar a:hover {
   color: coral;
+  transition: 0.5s ease-out;
 }
 
-/*--- HOME ---*/
+#navbar #left-side h1:hover {
+  color: coral;
+  transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+/*--- SHORT ABOUT ---*/
 #short-about {
   margin-right: 40px;
   color: #ffffff;
@@ -89,9 +99,10 @@ body {
 #short-about h1 {
   font-size: 70px;
   font-weight: 800;
-  font-family: "Atkinson Hyperlegible Mono", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
-  font-style: normal;
+  font-style: bold;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.247);
 }
 
 #short-about p {
@@ -102,10 +113,64 @@ body {
 
 #short-about #about-button {
   text-decoration: none;
+  padding: 15px 50px;
+  border-radius: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+
+  background-color: black;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+
+  transition: 1s ease-out;
+}
+
+#short-about #about-button:hover {
+  transition: 1s ease-in;
   color: #000000;
   background-color: #ffffff;
-  padding: 10px 40px;
-  border-radius: 5px;
+}
+
+/*--- ABOUT ---*/
+#about h1 {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.247);
+  color: #ffffff;
+  margin: 400px 100px 0 100px;
+}
+
+#about p {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 2;
+  color: #ffffff;
+  margin: 20px 100px;
+}
+
+/*--- PROJECTS ---*/
+#projects h1 {
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.247);
+  color: #ffffff;
+  margin: 200px 100px 0 100px;
+}
+
+#projects p {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 2;
+  color: #ffffff;
+  margin: 20px 100px;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.247);
 }
 
 /*--- FOOTER ---*/
@@ -128,7 +193,7 @@ footer {
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(70, 70, 70, 0.22);
   margin: 0 10px;
-  padding: 10px;
+  padding: 10px 0;
   justify-items: center;
 }
 
