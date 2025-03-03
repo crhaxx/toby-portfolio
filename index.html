@@ -4,74 +4,125 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style/main.css" />
   </head>
   <body>
-    <!-- Navbar -->
-    <nav id="navbar">
-      <div id="left-side">
-        <a href="#"
-          ><img src="/img/logo.png" alt="Logo" />
-          <h1>Tobiáš Sedláček</h1></a
-        >
-      </div>
-      <div id="right-side">
-        <ul>
-          <li><a href="#home">Domov</a></li>
-          <li><a href="#about">O mně</a></li>
-          <li><a href="#projects">Projekty</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </div>
-    </nav>
+    <div id="first-bg">
+      <!-- Navbar -->
+      <nav id="navbar">
+        <div id="left-side">
+          <a href="#"
+            ><img src="/img/logo.png" alt="Logo" />
+            <h1>Tobiáš Sedláček</h1></a
+          >
+        </div>
+        <div id="right-side">
+          <ul>
+            <li><a href="#home">Domov</a></li>
+            <li><a href="#about">O mně</a></li>
+            <li><a href="#links">Odkazy</a></li>
+            <li><a href="#galery">Galerie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    <!-- Home page -->
-    <div id="home">
-      <div id="left">
-        <h1>Vítejte na mém portfóliu</h1>
+      <!-- Short-About -->
+      <div id="short-about">
+        <h1>Tobiáš Sedláček</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Pellentesque
-          pretium lectus id turpis. Mauris suscipit, ligula sit amet pharetra
-          semper, nibh ante cursus purus, vel sagittis velit mauris vel metus.
-          Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam,
-          tempor suscipit diam nulla vel leo. Etiam quis quam. Phasellus
-          faucibus molestie nisl. Mauris metus. Temporibus autem quibusdam et
-          aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
-          voluptates repudiandae sint et molestiae non recusandae. Duis
-          bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget
-          facilisis enim ipsum id lacus. In rutrum.
+          Jmenuji se Tobiáš Sedláček, je mi 15 let a rybaření je můj největší
+          koníček.<br />
+          Naučili mě to děda a táta a od té doby trávím rád čas u vody, užívám
+          si klid a napětí při čekání na záběr.<br />Baví mě zkoušet nové
+          techniky a nástrahy.
         </p>
-
-        <p>
-          Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede.
-          Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-          voluptatibus maiores alias consequatur aut perferendis doloribus
-          asperiores repellat. Phasellus rhoncus. Nullam justo enim,
-          consectetuer nec, ullamcorper ac, vestibulum in, elit. Integer
-          imperdiet lectus quis justo. Nulla non arcu lacinia neque faucibus
-          fringilla. Mauris tincidunt sem sed arcu. Nulla turpis magna, cursus
-          sit amet, suscipit a, interdum id, felis. Curabitur bibendum justo non
-          orci. In rutrum. Integer in sapien.
-        </p>
-
-        <p>
-          Aenean fermentum risus id tortor. Aliquam erat volutpat. Etiam dictum
-          tincidunt diam. Quis autem vel eum iure reprehenderit qui in ea
-          voluptate velit esse quam nihil molestiae consequatur, vel illum qui
-          dolorem eum fugiat quo voluptas nulla pariatur? Nam quis nulla.
-          Integer malesuada. Duis pulvinar. Integer rutrum, orci vestibulum
-          ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede
-          sem sit amet enim. Curabitur bibendum justo non orci. Cum sociis
-          natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-          mus.
-        </p>
+        <br />
+        <a href="#about" id="about-button">Více o mně</a>
       </div>
-      <div id="right">
-        <a href="#"><img src="/img/banner.jpg" alt="Logo" /></a>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <h1>O mně</h1>
+      <p>
+        Jmenuji se Tobiáš Sedláček a je mi 15 let. Rybaření se věnuji už od
+        malička, naučili mě to můj děda a táta, a od té doby je to můj největší
+        koníček. Nejraději trávím čas u vody, kde si užívám klid a napětí při
+        čekání na záběr. Baví mě objevovat nové techniky lovu a zkoušet různé
+        nástrahy.<br /><br />Miluji přírodu a čas strávený u řek, rybníků a
+        přehrad. Každé místo má své kouzlo – řeky jsou divoké a plné života,
+        rybníky nabízejí klid a pohodu, zatímco přehrady ukrývají tajemství
+        velkých ryb. Když sedím u vody, poslouchám zpěv ptáků, šumění stromů a
+        sleduji vlnky na hladině, cítím se naprosto svobodný a spojený s
+        přírodou. Rybaření pro mě není jen o úlovcích, ale o zážitcích a
+        chvílích, na které nikdy nezapomenu.
+      </p>
+    </div>
+
+    <div class="addspace"></div>
+
+    <!-- Projects -->
+    <div id="links">
+      <h1>Důležité Odkazy</h1>
+      <div id="items">
+        <div class="item">
+          <img src="\img\projects\discord.jpeg" alt="Image 1" />
+          <h2>Discord Server</h2>
+          <a href="https://discord.gg/QGEeZ43fyG">Připojit se</a>
+        </div>
+        <div class="item">
+          <img src="\img\projects\youtube.png" alt="Image 2" />
+          <h2>Youtube Kanál</h2>
+          <a href="https://www.youtube.com/@rybarenistobim">Navštívit</a>
+        </div>
+        <div class="item">
+          <img src="\img\projects\instagram.png" alt="Image 2" />
+          <h2>Instagram Profil</h2>
+          <a href="www.instagram.com/toby.baits/">Navštívit</a>
+        </div>
+        <div class="item">
+          <img src="\img\projects\linktree.png" alt="Image 2" />
+          <h2>Linktree Odkazy</h2>
+          <a href="www.instagram.com/toby.baits/">Navštívit</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="addspace"></div>
+
+    <!-- Galery -->
+    <div id="galery">
+      <h1>Galerie</h1>
+      <div id="items">
+        <div class="gallery-item">
+          <img src="\img\galery\gal1.jpg" alt="Image 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="\img\galery\gal2.jpg" alt="Image 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="\img\galery\gal3.jpg" alt="Image 1" />
+        </div>
       </div>
     </div>
   </body>
-  <!-- <footer>
-    <p>© 2025 Crhaxx. All rights reserved</p>
-  </footer> -->
+  <footer>
+    <p>© 2025 Tobiáš Sedláček. All rights reserved</p>
+  </footer>
 </html>
